@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,41 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <main class="main-page">
         <div class="container">
             <div class="slider">
-                <div class="slides">
-                    <img src="./img/mem_1.jpg" alt="mem_1">
-                    <img src="./img/mem_2.jpg" alt="mem_2">
-                    <img src="./img/mem_3.jpg" alt="mem_3">
-                    <img src="./img/mem_4.jpg" alt="mem_4">
+                <input class="slider__input" type="radio" name="slider" id="memas_1" checked />
+                <input class="slider__input" type="radio" name="slider" id="memas_2" />
+                <input class="slider__input" type="radio" name="slider" id="memas_3" />
+                <input class="slider__input" type="radio" name="slider" id="memas_4" />
+                <div class="slider__image-group">
+                    <div class="slider__list">
+                        <div class="slider__img"><img class="image" src="./img/mem_1.jpg" alt="mem 1" /></div>
+                        <div class="slider__img"><img class="image" src="./img/mem_2.jpg" alt="mem 2" /></div>
+                        <div class="slider__img"><img class="image" src="./img/mem_3.jpg" alt="mem 3" /></div>
+                        <div class="slider__img"><img class="image" src="./img/mem_4.jpg" alt="mem 4" /></div>
+                    </div>
+                </div>
+                <div class="slider__bottom">
+                    <div class="slider__text">
+                        <p class="slider__descr-1">Description slide 1</p>
+                        <p class="slider__descr-2">Description slide 2</p>
+                        <p class="slider__descr-3">Description slide 3</p>
+                        <p class="slider__descr-4">Description slide 4</p>
+                    </div>
+
+                    <div id="slider__circle">
+                        <label class="circle__label" for="memas_1"></label>
+                        <label class="circle__label" for="memas_2"></label>
+                        <label class="circle__label" for="memas_3"></label>
+                        <label class="circle__label" for="memas_4"></label>
+                    </div>
                 </div>
             </div>
         </div>
-
     </main>
 </body>
+
 </html>
